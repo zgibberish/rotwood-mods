@@ -169,8 +169,8 @@ Since there's so much new stuff in this new version, and I'm also not a well exp
 
 Here are some images of it:
 
-![](img/modmenu_1.png)
-![](img/modmenu_2.png)
-![](img/modmenu_3.png)
-![](img/modmenu_4.png)
-![](img/modmenu_5.png)
+![](../img/modmenu_1.png)
+![](../img/modmenu_2.png)
+![](../img/modmenu_3.png)
+![](../img/modmenu_4.png)
+![](../img/modmenu_5.png)
