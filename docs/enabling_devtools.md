@@ -23,6 +23,7 @@ mode)
 - f1 : select entity to debug
 - shift+e : debug entity tool
 - g : toggle god mode (adding modifier keys to g will give you additional tiers of god mode)
+- shift+w : widget inspector
 
 ## (Optimal) Disabling save file encryption
 
