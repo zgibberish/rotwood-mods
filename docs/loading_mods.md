@@ -163,6 +163,13 @@ This might not be the most optimal method, but for now it works, and I hope we c
 
 **NOTE:** The game might not load mods on the first startup with mods, you might need to restart it one more time to load everything.
 
+# Mods crashing the game while debugging
+
+If you're making a mod and it ever causes a fatal game crash (error popup), or just simply a mod you installed caused that (which is unlikely but can still happen), the game by default will disable all mods on the next launch. To enable your mods again, you can either:
+
+- Remove mods from the `mods` folder, restart the game, close the game, place mods back in the `mods` folder, start the game again (by default newly installed mods will be enabled, this behavior is intended because there is no built in mod manager screen so you don't have an easy way to enable installed mods)
+- If you have access to the debug console, run `KnownModIndex:Enable("modname")`, followed by `KnownModIndex:Save()`, then reload the game, `modname` correspondss to the directory name of the mod in the `mods` folder.
+
 # (Optional) Mod Menu
 
 I also made a mod that adds a "Mods" page to the game's options screen, to let you more easily see and manage installed mods.
