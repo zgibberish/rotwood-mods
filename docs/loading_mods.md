@@ -172,7 +172,7 @@ If you're making a mod and it ever causes a fatal game crash (error popup), or j
 - Remove mods from the `mods` folder, restart the game, close the game, place mods back in the `mods` folder, start the game again (by default newly installed mods will be enabled, this behavior is intended because there is no built in mod manager screen so you don't have an easy way to enable installed mods)
 - If you have access to the debug console, run `KnownModIndex:Enable("modname")`, followed by `KnownModIndex:Save()`, then reload the game, `modname` correspondss to the directory name of the mod in the `mods` folder.
 
-Another easier way to have a selection of your mods (known stable ones are the mod that you're debugging) always loaded regardless of crashes is to use `modsettings.lua`, simply create a `modsettings.lua` file in your `mods` directory. This works exactly the same as DS/T's `modsettings.lua`
+Another easier way to have a selection of your mods (known stable ones or the mod that you're debugging) always loaded regardless of crashes is to use `modsettings.lua`, simply create a `modsettings.lua` file in your `mods` directory. This works exactly the same as DS/T's `modsettings.lua`
 
 In this script you can write `ForceEnableMod("modname")` for mods that you would like the game to load even after mod crashes.
 
