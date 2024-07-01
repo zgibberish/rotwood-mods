@@ -11,7 +11,7 @@ Please note that this is still very bare bones and some modding API features mig
 List of things that you can and cannot do with modding right now (might be incomplete):
 - Working:
     + General modding (globals, players, entities, components. events, inputs, etc)
-    + Modifying classes, constants, strings, etc
+    + Modifying classes, tunings, strings, etc
     + Custom widgets, screens and UI overall
     + Custom stategraphs
     + Upvalue modifying (can use UpvalueHacker with some minor changes)
