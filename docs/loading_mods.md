@@ -11,17 +11,17 @@ Please note that this is still very bare bones and some modding API features mig
 List of things that you can and cannot do with modding right now (might be incomplete):
 - Working:
     + General modding (globals, players, entities, components. events, inputs, etc)
+    + `modimport`, `require` for other mod scripts (working searchpaths).
     + Modifying classes, constants, strings, etc
     + Custom widgets, screens and UI overall
     + Custom stategraphs
+    + Custom components
     + Upvalue modifying (can use UpvalueHacker with some minor changes)
     + `modinfo` (using the same variables as DST)
-    + `modimport`, `require` for other mod scripts (working searchpaths).
     + `modsettings.lua` (used to force load mods)
     + Basically cheating (Since your game client manages your local player entities, even if you're not the host, you can do anything to yourself) (does Rotwood use peer to peer networking instead of server-clients? You can't c_spawn() if you're not the host though)
 - Not working / haven't tested:
     + Add*PostInit (reason: not implemented)
-    + Custom components (reason: not implemented)
     + Custom textures/animations (reason: not implemented and insufficient modding tools)
     + Networking (communicating with remote clients and sending data back and forth) (reason: not implemented and/or not enough info about how the networking system works)
     + Mod configurations (reason: implemented but haven't tested, if you can please test this and tell me if there's any issues)
