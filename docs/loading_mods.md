@@ -200,14 +200,4 @@ In this script you can write `ForceEnableMod("modname")` for mods that you would
 
 I also made a mod that adds a "Mods" page to the game's options screen, to let you more easily see and manage installed mods.
 
-**If you came from the forums post and have installed the old "modlist" mod, this is a new updated version, and its name has been changed to Mod Menu, so you'd want to remove the old one and replace it with this one instead.**
-
-If you use the mod menu mod, I recommend also force enabling it in `modsettings.lua` (see section "Debugging Mods" above) to have it always available after your mod crashes.
-
-Here are some images of it:
-
-![](../img/modmenu_1.png)
-![](../img/modmenu_2.png)
-![](../img/modmenu_3.png)
-![](../img/modmenu_4.png)
-![](../img/modmenu_5.png)
+Mod Menu was moved to its own repository, you can get it [here](https://github.com/zgibberish/rotwood-modmenu).
