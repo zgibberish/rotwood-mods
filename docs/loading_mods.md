@@ -1,10 +1,10 @@
 # Loading mods
 
-**PLEASE READ: (May 25th 2024) Since the last couple of EA versions, there have been some changes that made your save files incompatible once DEV_MODE is enabled or when playing with mods, causing crashes with no meaningful errors or making the game prompts you to delete your saves to continue playing. Please proceed with caution and make backups of your saves (located in AppData/Roaming/Klei/Rotwood)**
+**Rotwood does not officially support modding and Klei will not provide support for modded installs, please back up your save files and use/create mods at your own risk. [Read more here](https://support.klei.com/hc/en-us/articles/28992668677140-Rotwood-Client-Mods)**
 
 **Original post on Klei forums:** https://forums.kleientertainment.com/forums/topic/155849-unofficial-modding-support/
 
- Right now the built in mod loader of Rotwood is not complete and is disabled so by default it will not work properly. But it is possible to load and run mods, if you bypass the mod manager and load them yourself. After tinkering for a while now I have found a method to do so.
+Right now the built in mod loader of Rotwood is not complete and is disabled so by default it will not work properly. But it is possible to load and run mods, if you bypass the mod manager and load them yourself. After tinkering for a while now I have found a method to do so.
 
 Please note that this is still very bare bones and some modding API features might not work correctly or at all.
 
