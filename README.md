@@ -26,4 +26,6 @@ Below are some mods that I've made for Rotwood:
 - [Furry OC Generator](https://github.com/zgibberish/rotwood-furry-oc-generator)
 - [Text EmptyLineScale Fix](https://github.com/zgibberish/rotwood-text-emptylinescale-fix)
 
-You can find some images of the above mods in the `img` folder.
+(Outdated) You can find some images of the above mods in the `img` folder.
+
+TODO: Remove and update outdated mods (preferably in their own repositories and add a link here)
