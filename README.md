@@ -11,7 +11,7 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Loading mods](docs/loading_mods.md)
 
-- [(Experimental) Loading mods with ModWrangler](https://github.com/zgibberish/rotwood-modloader/tree/modwrangler)
+- [(Experimental) Loading mods with ModWrangler](https://github.com/zgibberish/rotwood-modloader/blob/modwrangler/README.md)
 
 - [Extracting game audio files](docs/extracting_audio.md)
 
