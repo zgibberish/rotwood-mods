@@ -65,13 +65,13 @@ This mod uses `RemapSoundEvent` to replace a built-in event with a modded one.
 
 **NOTE:** Not sure what's causing this yet (either a modding API bug or this is simply just how it works in this FMOD version), but modded event paths don't include the bank name as the root, so for an FMOD project that looks like this:
 
-![](../img/modded_audio_1.png)
+![](../assets/modded_audio/img/modded_audio_1.png)
 
 This event's path to use in scripts would be just `fartwithreverb`, not `rotwood_fmod/fartwithreverb` ("rotwood_fmod" being the bank name).
 
 So I would recommend having a root folder containing every event/folder in your modded FMOD projects, like this:
 
-![](../img/modded_audio_2.png)
+![](../assets/modded_audio/img/modded_audio_2.png)
 
 So your event path would be like this: `rotwood_fmod/fartwithreverb`
 
