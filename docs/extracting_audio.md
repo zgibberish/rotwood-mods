@@ -23,4 +23,4 @@ Now select your source folder and output folder in the 2 boxes in the center, or
 
 Finally press `Extract` and the process willl be done all automatically. Output `.wav` files  will be in your output folder.
 
-**As of the time I'm writing this (May 11th 2024) and using the latest Early Access version (rev 606127), I can confirm that this works and can extract all audio for all banks, except Master.strings, also works on linux through Wine.**
+**As of the time I'm writing this (May 11th 2024) and using the latest Early Access version (rev 606127), I can confirm that this works and can extract all audio for all banks. Also works on Linux through Wine.**
