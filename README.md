@@ -1,9 +1,10 @@
 # Hi
+
 Here you can find a compilation of documentations/guides + some other goodies that I either have collected or written myself about Rotwood, mostly about (but not exclusive to) modding.
 
-# Catalogue
+## Catalogue
 
-## Guides
+### Guides
 
 - [Extracting game scripts](docs/extracting_game_scripts.md)
 
@@ -19,7 +20,7 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Discord RPC on Linux](docs/linux_discord_rpc.md)
 
-## Mods
+### Mods
 
 Below are some mods that I've made for Rotwood:
 

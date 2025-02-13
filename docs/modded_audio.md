@@ -18,7 +18,7 @@ I won't go into much detail on how to create a Unity project since that's beyond
 
 Below is Rotwood's master bus's GUID:
 
-```
+```txt
 {28889e88-e58b-440c-9687-8879e4f60424}
 ```
 
@@ -36,7 +36,7 @@ Your compiled master bank will also come with another `.strings.bank` file, this
 
 ### Example Mod
 
-```
+```txt
 sound-test/
 ├─ sound/
 │  ├─ rotwood_fmod.bank
@@ -65,13 +65,13 @@ This mod uses `RemapSoundEvent` to replace a built-in event with a modded one.
 
 **NOTE:** Not sure what's causing this yet (either a modding API bug or this is simply just how it works in this FMOD version), but modded event paths don't include the bank name as the root, so for an FMOD project that looks like this:
 
-![](../assets/modded_audio/img/modded_audio_1.png)
+![Screenshot 1](../assets/modded_audio/img/modded_audio_1.png)
 
 This event's path to use in scripts would be just `fartwithreverb`, not `rotwood_fmod/fartwithreverb` ("rotwood_fmod" being the bank name).
 
 So I would recommend having a root folder containing every event/folder in your modded FMOD projects, like this:
 
-![](../assets/modded_audio/img/modded_audio_2.png)
+![Screenshot 2](../assets/modded_audio/img/modded_audio_2.png)
 
 So your event path would be like this: `rotwood_fmod/fartwithreverb`
 
@@ -83,14 +83,14 @@ Also this may help separate different mods's FMOD events better.
 
 Many thanks to RageLeague and Klei! I got a ton of useful info from your forums posts that really helped me with this!
 
-- https://forums.kleientertainment.com/forums/topic/123466-how-to-add-or-modify-in-game-sounds/
-- https://forums.kleientertainment.com/forums/topic/130511-figured-out-how-to-mod-audio/
-- https://forums.kleientertainment.com/forums/topic/130905-official-audio-support/
+- <https://forums.kleientertainment.com/forums/topic/123466-how-to-add-or-modify-in-game-sounds/>
+- <https://forums.kleientertainment.com/forums/topic/130511-figured-out-how-to-mod-audio/>
+- <https://forums.kleientertainment.com/forums/topic/130905-official-audio-support/>
 
 ### FMOD & Unity
 
 I used Unity to extract bus paths and GUIDs from Rotwood's master bank file, here are some useful info that I've gathered:
 
-- (FMOD for Unity addon) https://assetstore.unity.com/packages/tools/audio/fmod-for-unity-161631
-- (Unity script that I used for reference to use FMOD's API in Unity) https://qa.fmod.com/t/how-to-get-guids-from-banks-using-unity/21205
-- (FMOD API docs) https://www.fmod.com/docs/2.00/api/welcome.html
+- (FMOD for Unity addon) <https://assetstore.unity.com/packages/tools/audio/fmod-for-unity-161631>
+- (Unity script that I used for reference to use FMOD's API in Unity) <https://qa.fmod.com/t/how-to-get-guids-from-banks-using-unity/21205>
+- (FMOD API docs) <https://www.fmod.com/docs/2.00/api/welcome.html>
