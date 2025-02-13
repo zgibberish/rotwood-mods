@@ -21,4 +21,3 @@ To extract bank files:
 - Press `Extract` and wait. Output `.wav` files  will be in your output folder.
 
 **NOTE for Linux:** When running this in Wine, it might fail midway or be a bit unreliable sometimes. If that happens, you can try converting 1 bank file at a time.
-
