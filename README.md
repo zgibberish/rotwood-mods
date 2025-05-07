@@ -17,7 +17,7 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 ## Mods
 
-These are the mods that I've made for Rotwood, you can find them in the `mods` folder. More mods will be uploaded soon. If some mods get too out of hand I may put them in their own repositories for better version management.
+Below are some mods that I've made for Rotwood:
 
 - [Mod Menu](https://github.com/zgibberish/rotwood-modmenu)
 - (Outdated) Vertical Settings Tab Icons: Changes the tabs in the game options screen to show icons on top of text, so they're easier to read.
