@@ -24,7 +24,6 @@ List of things that you can and cannot do with modding right now (might be incom
     + Add*PostInit (reason: not implemented)
     + Custom textures/animations (reason: not implemented and insufficient modding tools)
     + Networking (communicating with remote clients and sending data back and forth) (reason: not implemented and/or not enough info about how the networking system works)
-    + Mod configurations (reason: implemented but haven't tested, if you can please test this and tell me if there's any issues)
 
 # How to load mods
 
@@ -136,6 +135,14 @@ table.sort(mods_to_load, modPrioritySort)
 print("loading mods...")
 for _,mod in ipairs(mods_to_load) do
     package.path = MODS_ROOT..mod.modname.."\\scripts\\?.lua;"..package.path
+
+   -- load saved mod configs
+   -- i still cant figure this out but GetModConfigData doesnt work without passing
+   -- true to the second argument (get_local_config), regardless of the client_config
+   -- argument in the line below set to true or not
+   KnownModIndex:LoadModConfigurationOptions(mod.modname, true)
+   -- honestly idk what this true (client_config) do, can anyone figure it out?
+
     RunInEnvironment(mod.fn, mod.env)
     print("mod \""..mod.name.."\" loaded! priority: "..tostring(mod.modinfo.priority or 0))
 end
