@@ -1,6 +1,6 @@
 # Extracting game scripts
 
-**If you ever need to look at the game scripts directly or modify them for modding or other various purposes, you need to extract them from the zip files first. By default the game loads data and scripts from .zip compressed files as they load faster, but it also supports loading from extracted data, although loading time may increase.**
+If you ever need to look at the game scripts directly or modify them for modding or other various purposes, you need to extract them from the zip files first. By default the game loads data and scripts from .zip compressed files as they load faster, but it also supports loading from extracted data, although loading time may increase.
 
 ## Below are the steps to extract and load extracted scripts:
 
