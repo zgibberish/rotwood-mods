@@ -12,7 +12,8 @@ List of things that you can and cannot do with modding right now (might be incom
 - Working:
     + General modding (globals, players, entities, components. events, inputs, etc)
     + `modimport`, `require` for other mod scripts (working searchpaths).
-    + Modifying classes, constants, strings, etc
+    + Modifying classes, tunings, strings, etc
+    + Mod configuration options (**Needs more testing**) (**NOTE:** use `GetModConfigData(name, true)` instead, I couldn't figure out exactly why but not having `get_local_config` set to `true` will make it return nothing.)
     + Custom widgets, screens and UI overall
     + Custom stategraphs
     + Custom components
