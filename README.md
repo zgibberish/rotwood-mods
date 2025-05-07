@@ -13,6 +13,8 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Extracting game audio files](docs/extracting_audio.md)
 
+- [Discord RPC on Linux](docs/linux_discord_rpc.md)
+
 ## Mods
 
 These are the mods that I've made for Rotwood, you can find them in the `mods` folder. More mods will be uploaded soon. If some mods get too out of hand I may put them in their own repositories for better version control.
