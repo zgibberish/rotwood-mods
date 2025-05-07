@@ -8,7 +8,7 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Extracting game scripts](docs/extracting_game_scripts.md)
 
-- [Enabling dev tools](docs/enabling_devtools.md)
+- [Dev Tools](docs/devtools.md)
 
 - [Mod Loader](https://github.com/zgibberish/rotwood-modloader/blob/main/README.md)
 
