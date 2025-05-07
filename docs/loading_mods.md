@@ -183,13 +183,13 @@ The mod scripts are run using the mod environment, not the game environment, so 
 
 You can also write `modinfo.lua` files for your mods and they will be read correctly.
 
-The `mods/` directory and everything inside it will persist through game updates, but the changes you made to your game scripts won't, so you'll have to patch the game to enable mods every time the game updates, it might seem like a lot of work, but this is way better than editing every single game sscript files to add "mods" yourself. 
+The `mods/` directory and everything inside it will persist through game updates, but the changes you made to your game scripts won't, so you'll have to patch the game to enable mods every time the game updates, it might seem like a lot of work, but this is way better than editing a ton of game scripts.
 
 Also you should make backups of everything you want to keep, just to be safe, plus it's good practice.
 
 This might not be the most optimal method, but for now it works, and I hope we can improve it as time goes on. Happy modding :3 
 
-**NOTE:** The game might not load mods on the first startup with mods, you might need to restart it one more time to load everything.
+**NOTE:** The game might not load mods on the first startup with mods, you might need to restart it once more to load everything.
 
 # Debugging Mods
 
