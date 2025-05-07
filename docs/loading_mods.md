@@ -133,7 +133,7 @@ Also you should make backups of everything you want to keep, just to be safe, pl
 
 This might not be the most optimal method, but for now it works, and I hope we can improve it as time goes on. Happy modding :3 
 
-# (Optimal) Mod Menu
+# (Optional) Mod Menu
 
 I also made a mod that adds a "Mods" page to the game's options screen, to let you more easily see and manage installed mods.
 
