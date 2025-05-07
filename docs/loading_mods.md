@@ -16,7 +16,7 @@ List of things that you can and cannot do with modding right now (might be incom
     + Custom widgets, screens and UI overall
     + Custom stategraphs
     + Custom components
-    + Upvalue modifying (can use UpvalueHacker with some minor changes)
+    + Upvalue modifying (can use UpvalueHacker ~~with some minor changes~~ (no longer an issue after searchpath fix) )
     + `modinfo` (using the same variables as DST)
     + `modsettings.lua` (used to force load mods)
     + Basically cheating (Since your game client manages your local player entities, even if you're not the host, you can do anything to yourself) (does Rotwood use peer to peer networking instead of server-clients? You can't c_spawn() if you're not the host though)
