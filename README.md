@@ -15,6 +15,8 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Extracting game audio files](docs/extracting_audio.md)
 
+- [Modded Audio](docs/modded_audio.md)
+
 - [Discord RPC on Linux](docs/linux_discord_rpc.md)
 
 ## Mods
