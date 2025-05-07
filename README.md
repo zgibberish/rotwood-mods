@@ -9,9 +9,9 @@ Here you can find a compilation of documentations/guides + some other goodies th
 
 - [Enabling dev tools](docs/enabling_devtools.md)
 
-- [Loading mods](docs/loading_mods.md)
+- [Mod Loader](https://github.com/zgibberish/rotwood-modloader/blob/main/README.md)
 
-- [(Experimental) Loading mods with ModWrangler](https://github.com/zgibberish/rotwood-modloader/blob/modwrangler/README.md)
+- [(Deprecated) Old Mod Loader](https://github.com/zgibberish/rotwood-modloader/blob/deprecated/README.md)
 
 - [Extracting game audio files](docs/extracting_audio.md)
 
