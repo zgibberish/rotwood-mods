@@ -27,7 +27,7 @@ mode)
 
 ## (Optimal) Disabling save file encryption
 
-By default saves are also encrypted to prevent tampering, if you need to inspect them, do this edit in `main.lua` to disable that:
+By default saves are also encrypted to prevent tampering, if you need to inspect them, make this edit in `main.lua` to disable that:
 
 ```diff
 -ENCODE_SAVES = RELEASE_CHANNEL ~= "dev"
