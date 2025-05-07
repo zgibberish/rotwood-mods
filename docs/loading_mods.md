@@ -8,6 +8,25 @@
 
 Please note that this is still very bare bones and some modding API features might not work correctly or at all. So far I have confirmed that `modinfo` and some features in the `modmain` environment like `modimport` and functions like `AddClassPostConstruct` work. 
 
+List of things that you can and cannot do with modding right now (might be incomplete):
+- Working:
+    + General modding (globals, players, entities, components. events, inputs, etc)
+    + Modifying classes, constants, strings, etc
+    + Custom widgets, screens and UI overall
+    + Custom stategraphs
+    + Upvalue modifying (can use UpvalueHacker with some minor changes)
+    + `modinfo` (using the same variables as DST)
+    + `modimport`
+    + `modsettings.lua` (used to force load mods)
+    + Basically cheating (Since your game client manages your local player entities, even if you're not the host, you can do anything to yourself) (does Rotwood use peer to peer networking instead of server-clients? You can't c_spawn() if you're not the host though)
+- Not working / haven't tested:
+    + Add*PostInit (reason: not implemented)
+    + Custom components (reason: not implemented)
+    + Custom textures/animations (reason: not implemented and insufficient modding tools)
+    + Networking (communicating with remote clients and sending data back and forth) (reason: not implemented and/or not enough info about how the networking system works)
+    + Mod configurations (reason: implemented but haven't tested, if you can please test this and tell me if there's any issues)
+    + loading other mod scripts with `require` (reason: not implemented)
+
 # How to load mods
 
 **Editing the game scripts requires you to have extracted scripts and use modified scripts (see [Extracting game scripts](extracting_game_scripts.md)), mods will stop working if you decide to switch back to the original scripts. In some rare cases, playing with mods, then reverting back to vanilla scripts can cause bugs and glitches, so you should definitely make backups of your saves.**
