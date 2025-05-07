@@ -10,21 +10,22 @@ Please note that this is still very bare bones and some modding API features mig
 
 List of things that you can and cannot do with modding right now (might be incomplete):
 - Working:
-    + General modding (globals, players, entities, components. events, inputs, etc)
+    + General modding (globals, players, entities, components. events, inputs, classes, tunings, strings, etc)
+    + Basically cheating (Since your game client manages your local player entities, even if you're not the host, you can do anything to yourself) (does Rotwood use peer to peer networking instead of server-clients? You can't c_spawn() if you're not the host though)
     + `modimport`, `require` for other mod scripts (working searchpaths).
-    + Modifying classes, tunings, strings, etc
+    + `modinfo` (using the same structure as DST)
     + Mod configuration options (**Needs more testing**) (**NOTE:** use `GetModConfigData(name, true)` instead, I couldn't figure out exactly why but not having `get_local_config` set to `true` will make it return nothing.)
+    + `modsettings.lua` (used to force load mods)
+    + Upvalue modifying
+    + `AddClassPostConstruct`
     + Custom widgets, screens and UI overall
     + Custom stategraphs
     + Custom components
-    + Upvalue modifying (can use UpvalueHacker ~~with some minor changes~~ (no longer an issue after searchpath fix) )
-    + `modinfo` (using the same variables as DST)
-    + `modsettings.lua` (used to force load mods)
-    + Basically cheating (Since your game client manages your local player entities, even if you're not the host, you can do anything to yourself) (does Rotwood use peer to peer networking instead of server-clients? You can't c_spawn() if you're not the host though)
+    + Custom ImGui panels
+    + *Custom assets (works, but proper support is still work in progress)
 - Not working / haven't tested:
     + Add*PostInit (reason: not implemented)
-    + Custom textures/animations (reason: not implemented and insufficient modding tools)
-    + Networking (communicating with remote clients and sending data back and forth) (reason: not implemented and/or not enough info about how the networking system works)
+    + Networking (communicating with remote clients and sending data back and forth) (reason: not implemented and/or not enough info about Rotwood networking systems)
 
 # How to load mods
 
