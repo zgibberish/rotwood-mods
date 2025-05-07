@@ -90,53 +90,55 @@ Near the end of `main.lua` there's also an `assert` call that was purposefully p
  ```lua
 local mods_to_load = {}
 for _,modname in ipairs(TheSim:GetModDirectoryNames()) do
-   local fn = kleiloadlua(MODS_ROOT..modname.."/".."modmain.lua")
-   if fn ~= nil then -- fix: only load and run a mod if it has a valid function, prevents crashes when loading an invalid or empty mod folder
-   	if KnownModIndex.savedata and KnownModIndex.savedata.known_mods and KnownModIndex.savedata.known_mods[modname] then		
-   		-- check if the mod's enabled state is nil
-   		-- if it is then this usually means the mod is newly loaded and hasnt been configured
-   		-- this will not catch mods that were disabled specifically
-   		if KnownModIndex.savedata.known_mods[modname].enabled == nil then
-   			-- new mods are enabled by default
-   			KnownModIndex:Enable(modname)
-   		end
+    local fn = kleiloadlua(MODS_ROOT..modname.."/".."modmain.lua")
+    if fn ~= nil then -- fix: only load and run a mod if it has a valid function, prevents crashes when loading an invalid or empty mod folder
+        if KnownModIndex.savedata and KnownModIndex.savedata.known_mods and KnownModIndex.savedata.known_mods[modname] then		
+            -- check if the mod's enabled state is nil
+            -- if it is then this usually means the mod is newly loaded and hasnt been configured
+            -- this will not catch mods that were disabled specifically
+            if KnownModIndex.savedata.known_mods[modname].enabled == nil then
+                -- new mods are enabled by default
+                KnownModIndex:Enable(modname)
+            end
 
-   		-- at this point the enabled state should be set and we just need to check
-   		-- if the mod is enabled (or force enabled) or not to load it
-   		if KnownModIndex:IsModEnabled(modname) or KnownModIndex:IsModForceEnabled(modname)  then
-   			local initenv = KnownModIndex:LoadModInfo(modname)
-   			local env = CreateEnvironment(modname)
-   			env.modinfo = initenv
-   			table.insert(mods_to_load, {
-   				fn = fn,
-   				env = env,
-   				modinfo = env.modinfo,
-   				name = env.modinfo.name or modname
-   			})
-   		end
-   	end
-   end
+            -- at this point the enabled state should be set and we just need to check
+            -- if the mod is enabled (or force enabled) or not to load it
+            if KnownModIndex:IsModEnabled(modname) or KnownModIndex:IsModForceEnabled(modname)  then
+                local initenv = KnownModIndex:LoadModInfo(modname)
+                local env = CreateEnvironment(modname)
+                env.modinfo = initenv
+                table.insert(mods_to_load, {
+                    fn = fn,
+                    env = env,
+                    modinfo = env.modinfo,
+                    name = env.modinfo.name or modname,
+                    modname = modname
+                })
+            end
+        end
+    end
 end 
 KnownModIndex:Save() -- save mods' enabled states if any were changed during loading
 
 -- now we have a table of all mods that need to be loaded,
 -- we need to load it based on priority
 local function modPrioritySort(a,b)
-   local apriority = (a.modinfo and a.modinfo.priority) or 0
-   local bpriority = (b.modinfo and b.modinfo.priority) or 0
-   if apriority == bpriority then
-   	return tostring(a.modinfo and a.modinfo.name) > tostring(b.modinfo and b.modinfo.name)
-   else
-   	return apriority  > bpriority
-   end
+    local apriority = (a.modinfo and a.modinfo.priority) or 0
+    local bpriority = (b.modinfo and b.modinfo.priority) or 0
+    if apriority == bpriority then
+        return tostring(a.modinfo and a.modinfo.name) > tostring(b.modinfo and b.modinfo.name)
+    else
+        return apriority  > bpriority
+    end
 end
 table.sort(mods_to_load, modPrioritySort)
 
 -- we're all set, lets load them
 print("loading mods...")
 for _,mod in ipairs(mods_to_load) do
-   RunInEnvironment(mod.fn, mod.env)
-   print("mod \""..mod.name.."\" loaded! priority: "..tostring(mod.modinfo.priority or 0))
+    package.path = MODS_ROOT..mod.modname.."\\scripts\\?.lua;"..package.path
+    RunInEnvironment(mod.fn, mod.env)
+    print("mod \""..mod.name.."\" loaded! priority: "..tostring(mod.modinfo.priority or 0))
 end
 ```
 
