@@ -167,9 +167,6 @@ I also made a mod that adds a "Mods" page to the game's options screen, to let y
 
 **If you came from the forums post and have installed the old "modlist" mod, this is a new updated version, and its name has been changed to Mod Menu, so you'd want to remove the old one and replace it with this one instead.**
 
-Since there's so much new stuff in this new version, and I'm also not a well experienced modder, I cannot ensure that I can fully test everything to make sure it's bug-free, I decided that I will be releasing this as testing first, the stable version will come shortly after (no, it's not like the mod is full of bugs, I've made sure to test all the basic functionalities beforehand, I'm just letting you know that it's still in very active development and there might be some rare edge cases where stuff might not work as intended, but I hope we can get all that sorted out). The mod can be found in the `mods` folder of this repository.
-**(May 16th 2024: if nothing goes wrong then I'll mark this versoin as stable by next week.)**
-
 Here are some images of it:
 
 ![](../img/modmenu_1.png)
