@@ -24,12 +24,7 @@ Here you can find a compilation of documentations/guides + some other goodies th
 Below are some mods that I've made for Rotwood:
 
 - [Mod Menu](https://github.com/zgibberish/rotwood-modmenu)
-- (Outdated) Vertical Settings Tab Icons: Changes the tabs in the game options screen to show icons on top of text, so they're easier to read.
 - [Chat Text Background](https://github.com/zgibberish/rotwood-chat-text-background)
 - [Enemy Health Bars](https://github.com/zgibberish/rotwood-enemyhealthbars)
 - [Furry OC Generator](https://github.com/zgibberish/rotwood-furry-oc-generator)
 - [Text EmptyLineScale Fix](https://github.com/zgibberish/rotwood-text-emptylinescale-fix)
-
-(Outdated) You can find some images of the above mods in the `img` folder.
-
-TODO: Remove and update outdated mods (preferably in their own repositories and add a link here)
