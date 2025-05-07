@@ -6,7 +6,7 @@
 
  Right now the built in mod loader of Rotwood is not complete and is disabled so by default it will not work properly. But it is possible to load and run mods, if you bypass the mod manager and load them yourself. After tinkering for a while now I have found a method to do so.
 
-Please note that this is still very bare bones and some modding API features might not work correctly or at all. So far I have confirmed that `modinfo` and some features in the `modmain` environment like `modimport` and functions like `AddClassPostConstruct` work. 
+Please note that this is still very bare bones and some modding API features might not work correctly or at all.
 
 List of things that you can and cannot do with modding right now (might be incomplete):
 - Working:
