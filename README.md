@@ -24,5 +24,6 @@ These are the mods that I've made for Rotwood, you can find them in the `mods` f
 - [Chat Text Background](https://github.com/zgibberish/rotwood-chat-text-background)
 - [Enemy Health Bars](https://github.com/zgibberish/rotwood-enemyhealthbars)
 - [Furry OC Generator](https://github.com/zgibberish/rotwood-furry-oc-generator)
+- [Text EmptyLineScale Fix](https://github.com/zgibberish/rotwood-text-emptylinescale-fix)
 
 You can find some images of the above mods in the `img` folder.
