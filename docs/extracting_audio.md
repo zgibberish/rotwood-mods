@@ -22,3 +22,6 @@ To extract bank files:
 
 **NOTE for Linux:** When running this in Wine, it might fail midway or be a bit unreliable sometimes. If that happens, you can try converting 1 bank file at a time.
 
+Finally press `Extract` and the process willl be done all automatically. Output `.wav` files  will be in your output folder.
+
+**As of the time I'm writing this (May 11th 2024) and using the latest Early Access version (rev 606127), I can confirm that this works and can extract all audio for all banks. Also works on Linux through Wine.**
