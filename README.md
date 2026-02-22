@@ -1,5 +1,12 @@
 # Hi
 
+> [!NOTE]
+> This repository is archived, all future changes will be on the Codeberg repository instead.
+>
+> **This GitHub repo is very outdated btw.**
+>
+> <https://codeberg.org/gibbert/rotwood-modding-docs>
+
 Here you can find a compilation of documentations/guides + some other goodies that I either have collected or written myself about Rotwood, mostly about (but not exclusive to) modding.
 
 ## Catalogue
